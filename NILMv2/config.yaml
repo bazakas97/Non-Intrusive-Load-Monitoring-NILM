@@ -1,0 +1,42 @@
+action: evaluate  # Επιλογές: train, evaluate, extractsynthetic
+
+paths:
+  train_data: "NILMv2/DATA/SyntheticData/data/train.csv"
+  val_data: "NILMv2/DATA/SyntheticData/data/validation.csv"
+  test_data: "NILMv2/DATA/SyntheticData/data/test.csv"
+  model_save: "NILMv2/results/models/best_model.pth"
+  input_scaler: "NILMv2/results/models/input_scaler.save"
+  output_scaler: "NILMv2/results/models/output_scaler.save"
+
+train:
+  window_size: 160
+  batch_size: 64
+  epochs: 100
+  learning_rate: 0.0001
+  patience: 15
+
+  device_list: ['energy_dish_washer', 'energy_oven', 'energy_washing_machine', 'energy_fridge_freezer']
+
+evaluate:
+  window_size: 160
+  batch_size: 64
+  stride: 1
+
+  device_list: ['energy_dish_washer', 'energy_oven', 'energy_washing_machine', 'energy_fridge_freezer']
+  device_postprocessing_params:
+    energy_dish_washer:
+      min_duration: 3
+      min_energy_value: 100
+    energy_oven:
+      min_duration: 3
+      min_energy_value: 100
+    energy_washing_machine:
+      min_duration: 3
+      min_energy_value: 100
+    energy_fridge_freezer:
+      min_duration: 0
+      min_energy_value: 0
+
+extractsynthetic:
+  base_path: "NILMv2/DATA/SyntheticData/data"
+  days: 180
