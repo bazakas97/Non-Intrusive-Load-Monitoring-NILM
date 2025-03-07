@@ -113,16 +113,16 @@ The results of the cross-validation are stored in the `results/csv/test_predicti
 The performance using the synthetic dataset can be described by the following table / figures.
 
 #### Table for synthetic Metrics
-![Metrics for synthetic dataset](NILMv2\DATA\SyntheticData\synthPlots\device_metrics.png)
+![Metrics for synthetic dataset](NILMv2/DATA/SyntheticData/synthPlots/device_metrics.png)
 
 #### Figures
-![Plot for dishwasher](NILMv2\DATA\SyntheticData\synthPlots\dish_synth.png)
+![Plot for dishwasher](NILMv2/DATA/SyntheticData/synthPlots/dish_synth.png)
 
-![Plot for fridge](NILMv2\DATA\SyntheticData\synthPlots\fridge_synth.png)
+![Plot for fridge](NILMv2/DATA/SyntheticData/synthPlots/fridge_synth.png)
 
-![Plot for triangular](NILMv2\DATA\SyntheticData\synthPlots\trianglular_synth.png)
+![Plot for triangular](NILMv2/DATA/SyntheticData/synthPlots/trianglular_synth.png)
 
-![Plot for washingmachine](NILMv2\DATA\SyntheticData\synthPlots\washingmachine_synth.png)
+![Plot for washingmachine](NILMv2/DATA/SyntheticData/synthPlots/washingmachine_synth.png)
 
 ### Results on SEL's dataset
 The performance using the data provided by SEL can be described by the following table / figures.
@@ -130,28 +130,28 @@ The performance using the data provided by SEL can be described by the following
 
 #### 1st Approach
 #### Table for  Metrics
-![Metrics for 1st Approach dataset](NILMv2\DATA\RealData\allhouses\allplots\device_metrics.png)
+![Metrics for 1st Approach dataset](NILMv2/DATA/RealData/allhouses/allplots/device_metrics.png)
 
 #### Figures
-![Plot for dishwasher](NILMv2\DATA\RealData\allhouses\allplots\dishwaher_all.png)
+![Plot for dishwasher](NILMv2/DATA/RealData/allhouses/allplots/dishwaher_all.png)
 
-![Plot for fridge](NILMv2\DATA\RealData\allhouses\allplots\fridge.png)
+![Plot for fridge](NILMv2/DATA/RealData/allhouses/allplots/fridge.png)
 
-![Plot for oven](NILMv2\DATA\RealData\allhouses\allplots\oven.png)
+![Plot for oven](NILMv2/DATA/RealData/allhouses/allplots/oven.png)
 
-![Plot for washingmachine](NILMv2\DATA\RealData\allhouses\allplots\/washing_machine.png)
+![Plot for washingmachine](NILMv2/DATA/RealData/allhouses/allplots/washing_machine.png)
 
 #### 2nd Approach
 #### Table for  Metrics
-![Metrics for 2nd Approach dataset](NILMv2\DATA\RealData\splitted\plots\device_metrics.png)
+![Metrics for 2nd Approach dataset](NILMv2/DATA/RealData/splitted/plots/device_metrics.png)
 
 #### Figures
-![Plot for dishwasher](NILMv2\DATA\RealData\splitted\plots\dishwasher.png)
+![Plot for dishwasher](NILMv2/DATA/RealData/splitted\plots/dishwasher.png)
 
-![Plot for fridge](NILMv2\DATA\RealData\splitted\plots\fridge.png)
+![Plot for fridge](NILMv2/DATA/RealData/splitted/plots/fridge.png)
 
-![Plot for oven](NILMv2\DATA\RealData\splitted\plots\oven.png)
+![Plot for oven](NILMv2/DATA/RealData/splitted/plots/oven.png)
 
-![Plot for washingmachine](NILMv2\DATA\RealData\splitted\plots\washing_machine.png)
+![Plot for washingmachine](NILMv2/DATA/RealData/splitted/plots/washing_machine.png)
 
 ###### Disclaimer: In the second approach, please note that two lines may appear on the energy main. This occurs because a second house is operating concurrently during the same hours, which can lead to some confusion when interpreting the results.
